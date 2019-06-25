@@ -1,0 +1,24 @@
+- pipeline:
+    name: checklabel
+    description: |
+      check label
+    manager: independent
+    trigger:
+      github:
+        - event: pull_request
+          action:
+            - opened
+            - changed
+    start:
+      github:
+        status: pending
+        comment: false
+    success:
+      github:
+        status: 'success'
+        label: 'emea'
+      mysql:
+    failure:
+      github:
+        status: 'failed'
+      mysql:
