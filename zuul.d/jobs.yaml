@@ -18,3 +18,14 @@
       nodes:
         - name: node
           label: ubuntu-bionic
+- job:
+    name: location
+    parent: null
+    description: |
+      Location Job.
+    pre-run: playbooks/location/pre.yaml
+    timeout: 1800
+    nodeset:
+      nodes:
+        - name: node
+          label: ubuntu-bionic
