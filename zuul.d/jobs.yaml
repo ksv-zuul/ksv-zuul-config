@@ -20,7 +20,7 @@
           label: ubuntu-bionic
 - job:
     name: location
-    parent: null
+    parent: base
     description: |
       Location Job.
     pre-run: playbooks/location/pre.yaml
