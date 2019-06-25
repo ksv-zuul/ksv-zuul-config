@@ -17,9 +17,8 @@
       github:
         status: 'success'
         label: 'emea'
-      mysql:
-      
+      mysql:      
     failure:
       github:
-        status: 'failed'
+        status: 'failure'
       mysql:
