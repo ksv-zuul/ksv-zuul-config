@@ -16,7 +16,7 @@
     timeout: 1800
     nodeset:
       nodes:
-        - name: cents01
+        - name: centos1
           label: centos1
 
 - job:
@@ -28,5 +28,5 @@
     timeout: 1800
     nodeset:
       nodes:
-        - name: cents01
+        - name: centos1
           label: centos1
