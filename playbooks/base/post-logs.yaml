@@ -3,3 +3,8 @@
   roles:
     - role: upload-logs
       zuul_log_url: "http://54.245.10.48:8000"
+  tasks:
+    - name: "zuul return task"
+      zuul_return:
+        data:
+          zuul_return_location: "Chennai"
