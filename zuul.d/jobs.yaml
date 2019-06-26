@@ -14,10 +14,7 @@
     roles:
       - zuul: zuul/zuul-jobs
     timeout: 1800
-    nodeset:
-      nodes:
-        - name: node
-          label: ubuntu-bionic
+
 - job:
     name: location
     parent: base
@@ -25,7 +22,3 @@
       Location Job.
     pre-run: playbooks/location/pre.yaml
     timeout: 1800
-    nodeset:
-      nodes:
-        - name: node
-          label: ubuntu-bionic
