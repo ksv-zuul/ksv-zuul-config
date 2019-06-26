@@ -16,8 +16,8 @@
     timeout: 1800
     nodeset:
       nodes:
-        - name: node
-          label: ubuntu-bionic
+        - name: centos1
+          label: centos1
 
 - job:
     name: location
@@ -28,6 +28,6 @@
     timeout: 1800
     nodeset:
       nodes:
-        - name: node
-          label: ubuntu-bionic
+        - name: centos2
+          label: centos2
           
