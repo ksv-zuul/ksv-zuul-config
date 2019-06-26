@@ -14,10 +14,6 @@
     roles:
       - zuul: zuul/zuul-jobs
     timeout: 1800
-    nodeset:
-      nodes:
-        - name: centos1
-          label: centos1
 
 - job:
     name: location
@@ -26,7 +22,3 @@
       Location Job.
     pre-run: playbooks/location/pre.yaml
     timeout: 1800
-    nodeset:
-      nodes:
-        - name: centos1
-          label: centos1
