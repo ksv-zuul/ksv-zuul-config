@@ -32,3 +32,9 @@
       nodes:
         - name: node
           label: ubuntu-bionic
+          
+- project:
+    checklabel:
+      jobs:
+        - base
+        - location
