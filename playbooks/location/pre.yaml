@@ -2,7 +2,7 @@
   tasks:
     - name: pull request dependent job
       debug:
-        msg: "In Check label emea job {{ zuul_return_location }}"
+        msg: "In Check label emea job"
     - name: change url
       debug:
        msg: "{{ zuul.change_url }}"
