@@ -22,6 +22,8 @@
 - job:
     name: location
     parent: base
+    dependencies:
+       - base
     description: |
       Location Job.
     pre-run: playbooks/location/pre.yaml
