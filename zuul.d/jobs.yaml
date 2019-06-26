@@ -22,8 +22,6 @@
 - job:
     name: location
     parent: base
-    dependencies:
-       - base
     description: |
       Location Job.
     pre-run: playbooks/location/pre.yaml
@@ -33,8 +31,3 @@
         - name: node
           label: ubuntu-bionic
           
-- project:
-    checklabel:
-      jobs:
-        - base
-        - location
