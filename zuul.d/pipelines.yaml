@@ -16,7 +16,7 @@
     success:
       github:
         status: 'success'
-        label: " {{ zuul_location }} "
+        label: 'emea'
       mysql:      
     failure:
       github:
